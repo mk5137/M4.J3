@@ -22,12 +22,12 @@
         
         $zgoda = $_POST["zgoda"] ?? "";
 
-        // 25. Sprawdzenie wymaganych danych
+        
         if ($imie === "" || strlen($imie) < 2) {
             $errors[] = "Imię jest wymagane i musi mieć co najmniej 2 znaki.";
         }
 
-        // 26. Sprawdzenie e-maila w PHP
+        
         if ($email === "" || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $errors[] = "Podano niepoprawny adres e-mail.";
         }
@@ -40,17 +40,17 @@
             $errors[] = "Wiadomość nie może być pusta.";
         }
 
-        // 27. Weryfikacja zgody
+        
         if ($zgoda !== "tak") {
             $errors[] = "Wymagana jest akceptacja regulaminu.";
         }
 
-        // 28. Wyświetlenie wyników
+        
         if (empty($errors)) {
             echo "<h2>Podziękowanie</h2>";
             echo "<p style='color: green; font-weight: bold;'>Formularz został wysłany pomyślnie!</p><br>";
             
-            // 24. Bezpieczne wyświetlanie (htmlspecialchars)
+            
             echo "<p><strong>Imię:</strong> " . htmlspecialchars($imie, ENT_QUOTES, "UTF-8") . "</p>";
             echo "<p><strong>E-mail:</strong> " . htmlspecialchars($email, ENT_QUOTES, "UTF-8") . "</p>";
             echo "<p><strong>Temat:</strong> " . htmlspecialchars($temat, ENT_QUOTES, "UTF-8") . "</p>";

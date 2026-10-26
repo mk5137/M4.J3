@@ -6,14 +6,14 @@
 }
 
 body {
-    /* Głębokie, ciemne tło z łagodnym gradientem */
+    
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     min-height: 100vh;
     padding: 20px;
     color: #f8fafc;
 }
 
-/* Max szerokość, marginesy, tło, odległości */
+
 .container {
     max-width: 500px;
     margin: 40px auto;
@@ -56,13 +56,13 @@ textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Styling dla opcji w select */
+
 select option {
     background-color: #0f172a;
     color: #f8fafc;
 }
 
-/* 10. Efekt :focus dla pól */
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus,
@@ -95,7 +95,7 @@ button {
     transition: background-color 0.3s, transform 0.1s;
 }
 
-/* 10. Efekt :hover dla przycisku */
+
 button:hover {
     background-color: #4f46e5;
 }
@@ -104,7 +104,7 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Przycisk testowy */
+
 #btnTest {
     background-color: #475569 !important;
 }
@@ -113,7 +113,7 @@ button:active {
     background-color: #334155 !important;
 }
 
-/* 20. Czerwony tekst błędów */
+
 .error-msg {
     color: #fb7185;
     font-size: 13px;
@@ -139,13 +139,13 @@ button:active {
     display: none;
 }
 
-/* Style dla podsumowania (odbierz.php) */
+
 .success-msg {
     color: #4ade80;
     font-weight: bold;
 }
 
-/* 10. Styl dla małych ekranów (RWD) */
+
 @media (max-width: 480px) {
     .container {
         width: 95%;
