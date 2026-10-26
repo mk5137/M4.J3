@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 header("Content-Type: application/json; charset=UTF-8");
 
 $response = [
@@ -34,4 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $response["message"] = "Nieprawidłowa metoda żądania.";
 }
 
+ob_clean();
 echo json_encode($response, JSON_UNESCAPED_UNICODE);
+exit;
