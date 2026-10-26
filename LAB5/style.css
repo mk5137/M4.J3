@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Głębokie, ciemne tło z łagodnym gradientem */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #f8fafc;
+}
+
+/* Max szerokość, marginesy, tło, odległości */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #334155;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f8fafc;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #f8fafc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Styling dla opcji w select */
+select option {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* 10. Efekt :focus dla pól */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+    accent-color: #6366f1;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* 10. Efekt :hover dla przycisku */
+button:hover {
+    background-color: #4f46e5;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Przycisk testowy */
+#btnTest {
+    background-color: #475569 !important;
+}
+
+#btnTest:hover {
+    background-color: #334155 !important;
+}
+
+/* 20. Czerwony tekst błędów */
+.error-msg {
+    color: #fb7185;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.char-counter {
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.greeting-box {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #334155;
+    border-left: 4px solid #6366f1;
+    border-radius: 4px;
+    color: #f8fafc;
+    font-weight: bold;
+    display: none;
+}
+
+/* Style dla podsumowania (odbierz.php) */
+.success-msg {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+/* 10. Styl dla małych ekranów (RWD) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}
