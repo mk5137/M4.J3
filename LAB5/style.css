@@ -67,7 +67,10 @@ textarea {
     color: #f8fafc;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
 select option {
     background-color: #0f172a;
     color: #f8fafc;
